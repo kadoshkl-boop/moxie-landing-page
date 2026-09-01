@@ -247,13 +247,13 @@
     <script>
       /* ---------------------------------------------------------------
          n8n webhook — Moxie contact form
-         TEST url (workflow open in the editor, "Listen for test event"):
-           https://YOUR-N8N-HOST/webhook-test/moxie-contact
-         PRODUCTION url (workflow activated):
-           https://YOUR-N8N-HOST/webhook/moxie-contact
-         Replace YOUR-N8N-HOST below with your n8n domain.
+         PRODUCTION (in use — workflow published, always listening):
+           https://kadosh2026.app.n8n.cloud/webhook/moxie-contact
+         TEST (only after "Execute workflow" in the editor, one call):
+           https://kadosh2026.app.n8n.cloud/webhook-test/moxie-contact
+         Swap /webhook/ for /webhook-test/ when debugging the flow.
       --------------------------------------------------------------- */
-      const N8N_WEBHOOK_URL = "https://kadosh2026.app.n8n.cloud/webhook-test/moxie-contact";
+      const N8N_WEBHOOK_URL = "https://kadosh2026.app.n8n.cloud/webhook/moxie-contact";
 
       (function () {
         const form = document.getElementById("moxie-contact-form");
